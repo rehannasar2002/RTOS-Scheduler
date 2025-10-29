@@ -34,8 +34,12 @@ The goal is to understand how task scheduling, context switching, and interrupt 
   - **QEMU for ARM Cortex-M**  
   - **GNU Arm Embedded Toolchain** (`arm-none-eabi-gcc`, `arm-none-eabi-gdb`)
 
-### Steps  
-1. Clone this repository:
+### Project Structure
    ```bash
-   git clone https://github.com/<your-username>/rtos-scheduler-assembly.git
-   cd rtos-scheduler-assembly
+├── src/
+│   ├── main.s          # Entry point and task setup
+│   ├── scheduler.s     # Core scheduler implementation
+│   ├── systick.s       # SysTick timer configuration
+│   └── startup.s       # Startup code and vector table
+├── Makefile
+└── README.md
